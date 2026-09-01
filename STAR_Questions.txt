@@ -1,0 +1,111 @@
+Tell me about a time you had to debug a particularly difficult issue. What was the problem, how did you approach isolating it, and what was the outcome?
+
+    Situation: While setting up a machine learning project, I ran into environment errors when trying to install PyTorch.
+
+    Task: I needed to get a working Python environment so I could actually run and test the model.
+
+    Action: I isolated the problem by checking version compatibility between Python 3.13 and PyTorch's available wheels, found they weren't compatible yet, and used conda to create a separate environment pinned to Python 3.11.
+
+    Result: The environment installed cleanly and I was able to continue development without further dependency conflicts.
+
+
+Describe a situation where you disagreed with a teammate or code reviewer about a technical decision. How did you handle the disagreement, and what was the resolution?
+
+    Situation: In a Hackathon, there was discussion on which chatbot should be used to analyze the text from any voice and match it to a name. It was either the more accurate but resource heavy claude, or the free but less powerful company sponsored chatbot.
+
+    Task: I needed to help the team choose an approach that balanced accuracy with our limited compute/time budget.
+
+    Action: We discussed and eventually decided that we should atleast test out the company sponsored chatbot before deciding to switch to a different one.
+
+    Result: We started the project with the companies chatbot in mind. It took more time to test and refine this chatbot but it worked in the end.
+
+
+Walk me through a time you had to learn a new technology or language quickly to complete a project. What was your approach, and how did it turn out?
+
+    Situation: In a hackathon, I had to quickly learn a facial recognition API to build a feature for our project.
+
+    Task: I needed to correctly identify a person from an image and match it to a name, on a tight time limit.
+
+    Action: I researched the API's documentation and evaluated whether its requirements (compute, dependencies) would fit within our project's constraints before integrating it.
+
+    Result: I got the feature working end-to-end, though it turned out to be resource-heavy and laggy in practice.
+
+
+Tell me about a project where the requirements changed significantly midway through development. How did you adapt, and what was the impact on the timeline or scope?
+
+    Situation: In my senior CS project, we were tasked with making a chatbot that guides homeless people to any shelters nearby. The requirement that changed was that the professor requested it to make add a visual map.
+
+    Task: We needed to add an extra frontend application to this website.
+
+    Action: We integrated a mapping API (Google Maps/Mapbox) into the frontend and connected it to the chatbot's shelter-recommendation logic so a map would render alongside the chat response.
+
+    Result: It took some time, but we managed to make the chatbot work with the website and have the map navigation pop up when needed.
+
+
+Describe a time you missed a deadline or a project didn't go as planned. What happened, what did you learn, and what would you do differently?
+
+    Situation: In the hackathon, we as a group were not able to assemble our programs together in time. This was mostly due to there being no clear deadlines or stopping points to make sure they work together.
+
+    Task: What I would have done differently is make sure there is breakpoints to where we can assemble different parts of the project togethor.
+
+    Action: In the moment, we pulled an allnighter and had to cut some features in the end.
+
+    Result: In the end, the hardware connected to our software but it was laggy due to an excess amount of downloaded dependencies.
+
+
+Tell me about a time you had to explain a complex technical concept to a non-technical stakeholder. How did you approach it, and how did they respond?
+
+    Situation: When I finished a hackathon, I explained the project to my family when they asked.
+
+    Task: I had to explain AR glasses that could take a picture of a person and assign it to a name in a database. This was used so that it can show names of people so you don't have to remember it.
+
+    Action: I described that this project used ai to recognize people and show their names in the glasses.
+
+    Result: They understood the concept quickly, and comparing it to how people already use tagging on their phones helped it click for them.
+
+
+Describe a situation where you identified a way to improve an existing system or process (performance, code quality, workflow) without being asked to. What did you do and what was the result?
+
+    Situation: In the CS Senior project, I noticed that the chatbot could pull from the shelters themselves to see if they had enough space.
+
+    Task: I wanted to validate whether real-time shelter availability was feasible to add before committing engineering time to it.
+
+    Action: I proposed it to the professor, and once she suggested testing with dummy data first, I built that into our database so the chatbot could query it.
+
+    Result: Now the chatbot can give more accurate suggestions for the user.
+
+
+Tell me about a time you worked on a team project where a member wasn't pulling their weight or communication broke down. How did you address it?
+
+    Situation: During a group project in Object-Oriented Programming, some partners weren't communicating in the main group chat, making it hard to track progress.
+
+    Task: I needed to make sure everyone was aligned and using one channel so nothing fell through the cracks.
+
+    Action: I raised it directly in the group chat, asking that all project-related communication happen there so everyone had visibility.
+
+    Result: We had a group call where we caught up in the project and we were able to submit it in time.
+
+
+Describe a time you had to make a trade-off between writing clean, maintainable code and shipping quickly. How did you decide, and how did it play out?
+
+    Situation: In my first hackathon, I was responsible for building a face authentication app under a tight deadline, with little time to test.
+
+    Task: I had to prioritize proving the feature worked for its core purpose over hardening it against bugs or security issues.
+
+    Action: With limited time left, our team wasn't able to fully integrate and test all components together, so we ended up shipping everything at once rather than incrementally.
+
+    Result: My face authentication piece worked as intended, but the overall product suffered from unreliable hardware integration and an insecure database, a direct trade-off of the time pressure.
+
+
+Tell me about a time you received critical feedback on your code or approach. How did you respond, and what changed afterward?
+
+    Situation: There was a time when one of my project partners in my senior CS project correctly pointed out a flaw in my testcases for the chatbot.
+
+    Task: I had to add test cases that also related to the mental state of the user and if it can also handle sensitive situations.
+
+    Action: I researched on how people communicate with chatbots and how the testcases can reflect that.
+
+    Result: The testcases were more accurate and reflected a more broad approach.
+
+
+
